@@ -18,7 +18,7 @@ A clean, responsive documentation template theme for JSDoc 3.
 $ npm install --save-dev minami
 ```
 
-
+.
 ## Usage
 
 Clone repository to your designated `jsdoc` template directory, then:
