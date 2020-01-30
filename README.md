@@ -1,8 +1,10 @@
 # Minami
 
-A clean, responsive documentation template theme for JSDoc 3.
+Funny theme for JSDoc 3.
 
-![Minami Screenshot](http://i.imgur.com/rPCIFqT.png)
+Fork from [Minami](https://github.com/nijikokun/minami).
+
+<!-- ![Minami Screenshot](http://i.imgur.com/rPCIFqT.png) -->
 
 
 ## Uses
@@ -15,10 +17,10 @@ A clean, responsive documentation template theme for JSDoc 3.
 ## Install
 
 ```bash
-$ npm install --save-dev minami
+$ npm install --save-dev jsdoc-ilafolt
 ```
 
-.
+
 ## Usage
 
 Clone repository to your designated `jsdoc` template directory, then:
@@ -42,7 +44,7 @@ In your `.jsdoc.json` file, add a template option.
 
 ```json
 "opts": {
-  "template": "node_modules/minami"
+  "template": "node_modules/jsdoc-ilafolt"
 }
 ```
 
@@ -51,37 +53,16 @@ In your `.jsdoc.json` file, add a template option.
 
 ```json
 {
-    "tags": {
-        "allowUnknownTags": true,
-        "dictionaries": ["jsdoc"]
-    },
-    "source": {
-        "include": ["lib", "package.json", "README.md"],
-        "includePattern": ".js$",
-        "excludePattern": "(node_modules/|docs)"
-    },
-    "plugins": [
-        "plugins/markdown"
-    ],
     "templates": {
-        "cleverLinks": false,
-        "monospaceLinks": true,
-        "useLongnameInNav": false,
-        "showInheritedInNav": true
-    },
-    "opts": {
-        "destination": "./docs/",
-        "encoding": "utf8",
-        "private": true,
-        "recurse": true,
-        "template": "./node_modules/minami"
+        "title": "ilafolt",
+        "navigates": [
+            {
+                "text": "Text",
+                "url": "your/url",
+                "_blank": true
+            }
+        ]
     }
 }
 ```
 
-Specifying a number for useLongnameInNav it will be the max number of path elements to show in nav (starting from Class).
-
-
-## License
-
-Licensed under the Apache2 license.
