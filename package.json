@@ -1,24 +1,15 @@
 {
-  "name": "minami",
-  "version": "1.2.3",
-  "description": "Clean and minimal JSDoc 3 Template / Theme",
+  "name": "jsdoc-ilafolt",
+  "version": "0.0.2",
+  "description": "JSDoc funny theme fork from minami",
   "main": "publish.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Nijikokun/minami.git"
+    "url": "https://github.com/tasynguyen3894/jsdoc-ilafolt.git"
   },
-  "author": "Nijiko Yonskai <nijikokun@gmail.com>",
-  "licenses": [
-    {
-      "type": "Apache-2.0",
-      "url": "http://www.apache.org/licenses/LICENSE-2.0"
-    }
-  ],
-  "bugs": {
-    "url": "https://github.com/Nijikokun/minami/issues"
-  },
-  "homepage": "https://github.com/Nijikokun/minami"
+  "author": "Tasy Nguyen <thaisang.nguyen3894@gmail.com>",
+  "homepage": "tasynguyen3894.github.io"
 }

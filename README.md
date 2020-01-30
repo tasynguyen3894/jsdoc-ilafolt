@@ -26,7 +26,7 @@ $ npm install --save-dev jsdoc-ilafolt
 Clone repository to your designated `jsdoc` template directory, then:
 
 ```bash
-$ jsdoc entry-file.js -t path/to/minami
+$ jsdoc entry-file.js -t path/to/jsdoc-ilafolt
 ```
 
 

@@ -427,7 +427,6 @@ function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
                 if (itemHeading === 'Tutorials') {
                     dataItem = buildNavItem(linktoFn(item.longname, displayName))
                 } else {
-                    // console.log(helper.longnameToUrl[item.longname])
                     dataItem = Object.assign(
                         buildNavHeading(buildNavType(item.kind, linktoFn(item.longname, displayName))),
                         { textContent: displayName }
@@ -442,7 +441,6 @@ function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
                         if (method.inherited && conf.showInheritedInNav === false) {
                             return
                         }
-                        console.log(helper.longnameToUrl[method.longname])
                         dataItem.child.push(buildNavItem(buildNavType(method.kind, linkto(method.longname, method.name))))
                     })
                 }
