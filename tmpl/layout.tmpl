@@ -45,8 +45,16 @@ var templates = env.conf.templates;
 
     <nav>
         <div>
+            Dark mode 
             <label class="switch">
                 <input type="checkbox" id="toggle-mode" onchange="onChangeMode(this)">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div>
+            Split example 
+            <label class="switch">
+                <input type="checkbox" id="toggle-split" onchange="onChangeSplit(this)">
                 <span class="slider round"></span>
             </label>
         </div>
@@ -106,10 +114,19 @@ var templates = env.conf.templates;
         const toggleMode = document.getElementById("toggle-mode");
         if(localStorage.getItem("darkmode") == 1) {
             document.body.classList.add("dark");
-            toggleMode.checked = false;
+            toggleMode.checked = true;
         } else {
             document.body.classList.remove("dark");
-            toggleMode.checked = true;
+            toggleMode.checked = false;
+        }
+
+        const toggleSplit = document.getElementById("toggle-split");
+        if(localStorage.getItem("split") == 1) {
+            document.body.classList.add("split");
+            toggleSplit.checked = true;
+        } else {
+            document.body.classList.remove("split");
+            toggleSplit.checked = false;
         }
     </script>
 </body>

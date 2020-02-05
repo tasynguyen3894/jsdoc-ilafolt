@@ -13,7 +13,7 @@ var self = this;
     name + (data.signature || '') ?>
     </h4>
 
-    <div style="width: 48%; float: left;">
+    <div class="block-info">
         <h5>Info</h5>
         <?js if (data.summary) { ?>
         <p class="summary">
@@ -148,7 +148,7 @@ var self = this;
     </div>
 
 
-    <div style="width: 48%; float: left; margin-left: 30px;">
+    <div class="block-code">
         <?js if (data.examples && examples.length) { ?>
         <div class="section-examples">
             <h5>Example

@@ -25,11 +25,21 @@ function copyToClipboard(button) {
 }
 
 function onChangeMode(el) {
-    if(el.checked === true) {
+    if(el.checked !== true) {
         document.body.classList.remove("dark");
         localStorage.setItem("darkmode", 0);
     } else {
         document.body.classList.add("dark");
         localStorage.setItem("darkmode", 1);
+    }
+}
+
+function onChangeSplit(el) {
+    if(el.checked !== true) {
+        document.body.classList.remove("split");
+        localStorage.setItem("split", 0);
+    } else {
+        document.body.classList.add("split");
+        localStorage.setItem("split", 1);
     }
 }

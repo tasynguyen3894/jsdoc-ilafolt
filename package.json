@@ -1,6 +1,6 @@
 {
   "name": "jsdoc-ilafolt",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "JSDoc funny theme fork from minami",
   "main": "publish.js",
   "scripts": {
@@ -11,5 +11,8 @@
     "url": "https://github.com/tasynguyen3894/jsdoc-ilafolt.git"
   },
   "author": "Tasy Nguyen <thaisang.nguyen3894@gmail.com>",
-  "homepage": "tasynguyen3894.github.io"
+  "homepage": "tasynguyen3894.github.io",
+  "dependencies": {
+    "taffydb": "^2.7.3"
+  }
 }
